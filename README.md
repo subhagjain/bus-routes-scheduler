@@ -13,12 +13,12 @@ Buses CRUD with validations
 Route CRUD with validations
 Mongo DB as primary DB with buses routes locations and user data
 Admin and Standard users with create/update restrictions on non admin users
-🛠️ Installation Steps:
-1. Initiate mongo db server on local at localhost:27017
-2. Maven clean and install to run the tomcat server.
-3. Admin user username and password both "admin"
+<h2>🛠️ Installation Steps:</h2>
+<p>1. Initiate mongo db server on local at localhost:27017</p>
+<p>2. Maven clean and install to run the tomcat server.</p>
+<p>3. Admin user username and password both "admin"</p>
 
-
+<p>
 curl -X 'POST' \
   'http://localhost:8080/api/v1/authenticate' \
   -H 'accept: */*' \
@@ -27,12 +27,12 @@ curl -X 'POST' \
   "username": "admin",
   "password": "admin"
 }'
+</p>
+
+<p>4. Standard user username and password both "user"</p>
 
 
-4. Standard user username and password both "user"
-
-
-curl -X 'POST' \
+<p>curl -X 'POST' \
   'http://localhost:8080/api/v1/authenticate' \
   -H 'accept: */*' \
   -H 'Content-Type: application/json' \
@@ -40,11 +40,11 @@ curl -X 'POST' \
   "username": "user",
   "password": "user"
 }'
+</p>
 
 
-
-5. Bus Create :
-curl -X 'POST' \
+<p>5. Bus Create :</p>
+<p>curl -X 'POST' \
   'http://localhost:8080/api/v1/bus' \
   -H 'accept: */*' \
   -H 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwMjM2NzE0OSwiZXhwIjoxNzAyNDUzNTQ5fQ.7yrCRRemsIFpd6xsO3xD0VESaRlH4Yxy93t2Rowv6KV8KE7Rn38loQUQzci6GLmA74KYO8QWUdEr8xBqRTP0aQ' \
@@ -54,17 +54,17 @@ curl -X 'POST' \
   "busName": "travel 1",
   "busType": "DELUXE"
 }'
+</p>
+<p>6. Fetch available locations:</p>
 
-6. Fetch available locations:
 
-
-curl -X 'GET' \
+<p>curl -X 'GET' \
   'http://localhost:8080/api/v1/locations' \
   -H 'accept: */*' \
   -H 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwMjM2NzE0OSwiZXhwIjoxNzAyNDUzNTQ5fQ.7yrCRRemsIFpd6xsO3xD0VESaRlH4Yxy93t2Rowv6KV8KE7Rn38loQUQzci6GLmA74KYO8QWUdEr8xBqRTP0aQ'
-
-7. Route create : 
-curl -X 'POST' \
+</p>
+<p>7. Route create : </p>
+<p>curl -X 'POST' \
   'http://localhost:8080/api/v1/route' \
   -H 'accept: */*' \
   -H 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwMjM2NzE0OSwiZXhwIjoxNzAyNDUzNTQ5fQ.7yrCRRemsIFpd6xsO3xD0VESaRlH4Yxy93t2Rowv6KV8KE7Rn38loQUQzci6GLmA74KYO8QWUdEr8xBqRTP0aQ' \
@@ -77,9 +77,11 @@ curl -X 'POST' \
   "endTime": "17:00:00",
   "weekday": "MONDAY"
 }'
-8. To fetch all routes of a bus by reg number:
+  </p>
+<p>8. To fetch all routes of a bus by reg number:</p>
 
-curl -X 'GET' \
+<p>curl -X 'GET' \
   'http://localhost:8080/api/v1/route?busRegNumber=UP16%20AZ%202134' \
   -H 'accept: */*' \
   -H 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwMjM2NzY3MCwiZXhwIjoxNzAyNDU0MDcwfQ.HMyDJYwCRbfZuB-_e1S_PpnZZinxDCi2mJLSZ6yovO6YYhXbecVxK_CafddGaI4WxY3hRK6Xr_pXyrkvos1rDQ'
+</p>
