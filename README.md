@@ -1,9 +1,12 @@
-Bus Routing Scheduler
-Java project for Bus CRUD Routes CRUD with user authentication.
-🚀 Demo
-http://localhost:8080/swagger-ui/index.html
+<h1 align="center" id="title">Bus Routing Scheduler</h1>
 
-🧐 Features
+<p id="description">Java project for Bus CRUD Routes CRUD with user authentication.</p>
+
+<h2>🚀 Demo</h2>
+
+[http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
+<h2>🧐 Features</h2>
 Here're some of the project's best features:
 User Authentication via JWT
 Buses CRUD with validations
@@ -80,4 +83,3 @@ curl -X 'GET' \
   'http://localhost:8080/api/v1/route?busRegNumber=UP16%20AZ%202134' \
   -H 'accept: */*' \
   -H 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTcwMjM2NzY3MCwiZXhwIjoxNzAyNDU0MDcwfQ.HMyDJYwCRbfZuB-_e1S_PpnZZinxDCi2mJLSZ6yovO6YYhXbecVxK_CafddGaI4WxY3hRK6Xr_pXyrkvos1rDQ'
-
